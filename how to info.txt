@@ -1,0 +1,34 @@
+
+-----I've used blank lines here for display purposes, but please use dashes - for empty lines in yours!
+
+-----This line refers to the name of the album:
+volume.Name=My Album 1
+-----This one is the logo that is used when listening to the song (1080x1080):
+volume.Icon=logo.png
+-----This is the icon that is used beside the album in the selector (150x150):
+volume.Favicon=favicon.png
+-----This is used before URLs in the album that start with "URL:" (optional)
+-----For example, if the song's path is "URL:song1.ogg", this will set it to "https://myURL/song1.ogg"
+volume.baseURL=https://myURL/
+-----This refers to the background used for the album (1920x1080):
+volume.BG=bg.png
+-----This is the amount of songs in the album. Remember to set this when adding songs!
+volume.Songs=02
+
+--------------------
+
+-----The name of this song:
+song1.Name=First Song
+-----The path it's located at (in the same folder as the info.txt):
+-----This can also be a URL or a URL shortened using the baseURL from above.
+song1.Path=WhyDontYouPlayThem.ogg
+-----The time taken before the first beat of the song
+-----This is used alongside the BPM for the song's animation:
+song1.Delay=0.45
+-----The BPM of the current song.
+-----This is mainly used for the animation, but may be used for other reasons later.
+song1.BPM=113
+-----The song's unique icon (optional):
+song1.Icon=logo2.png
+-----The song's unique favicon in the menus (optional):
+song1.Favicon=favicon2.png
