@@ -5,6 +5,7 @@
 - Java combat is used (attack cooldown, sweeping edge)
 - You can crawl into 1-block spaces by useing a trapdoor
 - The Wither isn't as difficult to fight (less health, armour enchants aren't ignored)
+- Tridents only drop from Drowned that hold them (not any Drowned)
 - Character Creator skins don't show up to Java players
 - Emotes don't work: instead they swap items in offhand
 - Glowing effect (raids/spectral arrows) doesn't show up
@@ -36,6 +37,7 @@
 - Guardians struck by lightning become Elder Guardians
 - Phantoms grow larger the longer you stay awake
 - Mobs can be named `silence me` to disable sounds
+- Beehives contain lore indicating their contents
 ### Miscellaneous
 - Double doors both open at the same time
 - Only one player has to sleep to skip night
@@ -44,15 +46,18 @@
 - Items are placed into a barrel after death (temporarily)
 - XP Bottles can be gained by right-clicking an enchant table with a bottle
 - XP Bottles can be smelted in a furnace to return experience
+- Lingering Weakness potions can convert bedrock into stone
 - Chests can be accessed through signs/item frames
+- Cakes can be picked up with Silk Touch
 - Glass breaks faster using a Pickaxe
 
 ## Loot tables
  (All recipes can be viewed by default from the menu)
 ### Drops
+- Shulkers can drop double shells
+- Tridents are more likely to drop
 - Mobs drop their heads upon death
 - Wandering traders sell miniblock heads
-- Shulkers can drop double shells
 
 Note: Mob heads don't show up in inventory/when worn due to Bedrock limitations
 ### Quality of Life
