@@ -41,6 +41,8 @@
 - Spectral arrows place a torch where they land
 - Blaze powder can grow Nether Warts like bone meal
 - Items are placed into a barrel after death (temporarily)
+- XP Bottles can be gained by right-clicking an enchant table with a bottle
+- XP Bottles can be smelted in a furnace to return experience
 - Chests can be accessed through signs/item frames
 - Glass breaks faster using a Pickaxe
 
