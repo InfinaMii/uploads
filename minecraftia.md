@@ -30,6 +30,7 @@
 ### Entities
 - Villagers follow emerald blocks (mostly)
 - Cleric villagers can farm Nether Warts
+- All villagers can be converted into zombies
 - Parrots stay on your shoulder unless you take damage
 - Withers keep their focus after a chunk unloads
 - Guardians struck by lightning become Elder Guardians
