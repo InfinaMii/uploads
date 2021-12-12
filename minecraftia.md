@@ -6,7 +6,8 @@
 - You can crawl into 1-block spaces by useing a trapdoor
 - The Wither isn't as difficult to fight (less health, armour enchants aren't ignored)
 - Tridents only drop from Drowned that hold them (not any Drowned)
-- Character Creator skins don't show up to Java players
+- Some Character Creator skins don't show up for Java players
+- Armor stands can't be posed by crouching like usual
 - Emotes don't work: instead they swap items in offhand
 - Glowing effect (raids/spectral arrows) doesn't show up
 - Deepslate generates 16 blocks higher (Deepslate coal is possible)
@@ -20,6 +21,7 @@
 - Many statistics are saved as a scoreboard, for use in games/competition
 - You can view coords, orientation, and time by typing `/trigger ch_toggle`
 - You can plan nether portal locations by typing `trigger np_[inOverworld/inNether]` depending on your current location
+- Armor stands can be modified, but for Bedrock players have to type `/trigger as_trigger set [number]` depending on the wanted pose
 - You can check your ping by typing `/ping`
 ### Redstone
 - Cobblestone generators create Deepslate below Y=0
@@ -58,8 +60,9 @@
 - Tridents are more likely to drop
 - Mobs drop their heads upon death
 - Wandering traders sell miniblock heads
+- Players drop their own heads (can break for some skins)
 
-Note: Mob heads don't show up in inventory/when worn due to Bedrock limitations
+Note: Mob heads don't show up in inventory/on armor stands to Bedrock limitations
 ### Quality of Life
 - Items such as Concrete, Wool, can be re-dyed
 - Items such as Bread, Shulker Boxes, can be made without a table
