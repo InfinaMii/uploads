@@ -1,12 +1,12 @@
 # Full list of modifications to the server:
 
 ## Java Differences
+- Some Character Creator skins don't show up
 - Redstone is different (use different tutorials)
 - Java combat is used (attack cooldown, sweeping edge)
 - You can crawl into 1-block spaces by useing a trapdoor
 - The Wither isn't as difficult to fight (less health, armour enchants aren't ignored)
 - Tridents only drop from Drowned that hold them (not any Drowned)
-- Some Character Creator skins don't show up for Java players
 - Armor stands can't be posed by crouching like usual
 - Emotes don't work: instead they swap items in offhand
 - Glowing effect (raids/spectral arrows) doesn't show up
