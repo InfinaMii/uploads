@@ -49,6 +49,7 @@
 - XP Bottles can be gained by right-clicking an enchant table with a bottle
 - XP Bottles can be smelted in a furnace to return experience
 - Lingering Weakness potions can convert bedrock into stone
+- Flower pots with Wither Roses will keep a chunk loaded
 - Chests can be accessed through signs/item frames
 - Cakes can be picked up with Silk Touch
 - Glass breaks faster using a Pickaxe
