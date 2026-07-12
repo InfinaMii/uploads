@@ -49,18 +49,23 @@ All of these programs will appear in the Discover store anyways, but I think it 
 
 
 ## -- Apps from Flathub Store --
-These will also appear in the Discover app
+These will appear in the built-in app store, Discover.<br>
+Some websites will also have a Flathub button that will open the correct page in Discover for you.<br>
 
-Spotify<br>
-Discord (or Vesktop if you want themes/plugins)<br>
-Prism Launcher<br>
-Krita<br>
-Audacity<br>
-Ryujinx<br>
-Dolphin Emulator<br>
-Inkscape<br>
-OBS Studio<br>
-VLC
+I would recommend going to the Settings tab and clicking Make Default on the right so that Flatpak apps appear first in the list.<br>
+
+- Spotify
+- Discord (or Vesktop if you want themes/plugins)
+- Prism Launcher
+- Krita
+- Audacity
+- Ryujinx
+- Dolphin Emulator
+- Inkscape
+- OBS Studio
+- VLC
+
+You can also install add-ons for apps such as Blender and VLC by finding their page on the store and clicking "Add-ons" at the top.
 <br/><br/>
 
 
