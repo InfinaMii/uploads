@@ -29,8 +29,7 @@ Below I've listed the apps that you were interested in installing, as well as wh
 <br/><br/>
 
 ## -- System commands --
-These are commands that can be entered into the system terminal (on KDE Plasma this is Konsole) to install apps.
-You probably won't need to use these (all apps will appear in Discover) but in the case that you do:<br>
+These are commands that can be entered into the system terminal (on KDE Plasma this is Konsole) to install apps:
 `sudo dnf install firefox gnome-disks`
 
 `sudo` = admin (will ask for password)<br>
@@ -44,6 +43,8 @@ These are the apps that I would like you to install using this method:
   - Steam's flatpak can have issues with recognising controllers/accessing files, so I like to install the official one
 - Wine: `wine` and `winetricks`
   - Used for opening and configuring Windows applications respectively
+ 
+All of these programs will appear in the Discover store anyways, but I think it would be useful to use the terminal for these so that you know roughly how it works.
 <br/><br/>
 
 
