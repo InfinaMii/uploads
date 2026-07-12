@@ -101,9 +101,30 @@ Windows apps can be opened similarly to Track Studio, running them with the comm
 You should also be able to open them by double-clicking the .exe file.
 
 For some apps, you'll need to configure setting or install extra dependencies (such as directx runtime) in order for them to run properly.<br>
-This can be done either by downloading the Windows versions of these dependencies separately and running them the same way you would on Windows, or if you need to change something more specifically, using `winetricks` from the terminal.
+This can be done either by downloading the Windows versions of these dependencies separately and running them the same way you would on Windows, or if you need to change something more specifically, using `winetricks` from the terminal.<br>
+I would typically recommend using an alternative for most things, but if there's a Windows app that can't be replaced it might work through Wine.
 
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/releases/tag/Final)
+- [BrawlBuilder](https://github.com/mogzol/BrawlBuilder/releases/latest)
+<br/><br/>
+
+
+## -- Other app considerations --
+These are some other things that you mentioned which I thought I would go over:
+<br/><br/>
+
+### - Office apps (Word, PowerPoint etc.) -
+The two main choices (to my knowledge) are LibreOffice and OnlyOffice:
+- LibreOffice comes with the most features, and has a customisable interface that is less familiar/modern
+- OnlyOffice has less features but aims to match Microsoft Office in its appearance and feature set<br>
+Both will be able to open any files you'd want to open, so it's mainly down to preference. (onlyoffice apparently added an optional ai tab but it seems like if you don't sign in with an api key it can't do anything)
+They're also both on Flathub, so you'll be able to get them from the package manager.
+<br/><br/>
+
+### - FTP client -
+On Linux, typically you don't need a separate app to access FTP devices - this is something that your file manager can do already.<br>
+On KDE Plasma, you can go to the Network tab and type `ftp://ip.address` into the file path bar (for example `ftp://192.168.7.29`), and it will open the FTP folder natively.<br>
+You can then right click in an empty spot and select "Add to Places" to pin this to the sidebar on the left.
 <br/><br/>
 
 
