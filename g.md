@@ -5,11 +5,15 @@ The process for creating a live Fedora USB is pretty simple compared to some oth
 Fedora Media Writer can be downloaded from (the Fedora GitHub page)[https://github.com/FedoraQt/MediaWriter/releases/latest]. This is a GUI tool that lets you pick a version of Fedora to download, and will write it to an **empty** USB drive.<br>
 Make sure to select **Fedora KDE Plasma Desktop** instead of **Fedora Workstation** in the drop-down if you want a Windows-like experience (rather than the default macOS-like one).<br>
 Once it is done, your USB drive can be used to reboot into Fedora.
+<br/><br/>
+
 
 ## -- Booting from the USB drive --
 If you don't already have an operating system installed (e.g. Windows on the SSD), I believe the computer should automatically boot into the live USB if its inserted due to this being the only available volume?<br>
 If it doesn't, you can select it from the BIOS menu. The BIOS menu can be opened by holding the `Esc` key whilst the computer boots, and once it opens there should be a menu on the bottom right that allows you to select which device to boot into (in this instance the Fedora/USB device).<br>
 This will enter you into a menu that says something similar to "Start Fedora 44" and "Test this media and start Fedora 44". These both do essentially the same thing, with one doing extra checks to make sure the USB is set up properly. I usually just pick "Start Fedora 44".
+<br/><br/>
+
 
 ## -- Installing Fedora --
 Once you're in the desktop environment, it should bring up a prompt to install Fedora to the computer.<br>
@@ -17,10 +21,12 @@ This is pretty simple so I'm sure you can figure this part out, you basically se
 Since you're building a new computer (with no files already on it) you can just tell it to erase the entire drive, and it should ask you to reboot once it is done.<br>
 
 When it reboots, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "discover" app store).
+<br/><br/>
 
 
 # --- Installing Apps ---
 Below I've listed the apps that you were interested in installing, as well as what different types of apps there are:
+<br/><br/>
 
 ## -- System commands --
 These are commands that can be entered into the system terminal (on KDE Plasma this is Konsole) to install apps.
@@ -38,6 +44,7 @@ These are the apps that I would like you to install using this method:
   - Steam's flatpak can have issues with recognising controllers/accessing files, so I like to install the official one
 - Wine: `wine` and `winetricks`
   - Used for opening and configuring Windows applications respectively
+<br/><br/>
 
 
 ## -- Apps from Flathub Store --
@@ -52,18 +59,21 @@ Ryujinx<br>
 Dolphin Emulator<br>
 Inkscape<br>
 OBS Studio<br>
-VLC<br>
+VLC
+<br/><br/>
 
 
 ## -- Apps from elsewhere (e.g. GitHub) --
 These won't show up in the app launcher so I'd create a shortcut for them (see below)<br>
 Standalone apps can come in multiple formats:
+<br/><br/>
 
 ### - AppImage -
 These are single files that contain all of the app's data, rather than coming as a .zip file.<br>
 They end with a `.appimage` extension and can be double-clicked to run.
 
 - [khinsiderdownloader](https://github.com/weespin/KhinsiderDownloader/releases)
+<br/><br/>
 
 ### - Loose files (.zip) -
 This is a .zip file containing the application and its data.<br>
@@ -71,21 +81,24 @@ The executable within it doesn't usually have an icon or extension,
 
 - [CTDM](https://github.com/MatteoPrampolini/CTDM/releases)
 - [Stoat](https://github.com/stoatchat/for-desktop/releases/)
+<br/><br/>
 
 ### - Whatever is going on with Track Studio -
 Track Studio doesn't provide a Linux executable at all, but can be run by using the command `dotnet TrackStudio.dll` within the folder.<br>
 You should probably create a shortcut and set the `Exec=` property to `dotnet path/to/TrackStudio.dll` to make it easier to launch.
 
 - [Track Studio](https://github.com/MapStudioProject/Track-Studio/releases)
+<br/><br/>
 
 ### - Windows apps -
-Windows apps can be run similarly to Track Studio, running them with the command `wine path/to/program.exe`.<br>
+Windows apps can be opened similarly to Track Studio, running them with the command `wine path/to/program.exe`.<br>
 You should also be able to open them by double-clicking the .exe file.
 
 For some apps, you'll need to configure setting or install extra dependencies (such as directx runtime) in order for them to run properly.<br>
 This can be done either by downloading the Windows versions of these dependencies separately and running them the same way you would on Windows, or if you need to change something more specifically, using `winetricks` from the terminal.
 
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/releases/tag/Final)
+<br/><br/>
 
 
 # --- App launcher shortcuts (desktop entries) ---
