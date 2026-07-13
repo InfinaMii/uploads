@@ -81,9 +81,16 @@ They end with a `.appimage` extension and can be double-clicked to run.
 - [khinsiderdownloader](https://github.com/weespin/KhinsiderDownloader/releases)
 <br/><br/>
 
-### - Loose files (.zip) -
-This is a .zip file containing the application and its data.<br>
-The executable within it doesn't usually have an icon or extension,
+### - Other installable packages (rpm, deb, etc.) -
+Sometimes, you'll be given a list of other formats to select from (such as .deb, .rpm, or .nix).<br>
+The correct file for Fedora is the one ending in `.rpm`, and if given an option you'll want to select the "x86" or "x64" version (arm64 and aarch versions are for devices with mobile processors).<br>
+Once the download finishes, you can then double-click on this file and it will allow you to install it using the Discover store app.
+<br/><br/>
+
+### - Loose files (.zip, .tar.gz) -
+This is a .zip or .tar.gz file that containing the application and its data.<br>
+Both .tar.gz and .zip files can be extracted by dragging them towards empty space in the file manager, or right clicking and selecting "Extract To..."<br>
+The executable within it doesn't usually have an icon or extension, for example Stoat's file is just called "stoat-desktop".
 
 - [CTDM](https://github.com/MatteoPrampolini/CTDM/releases)
 - [Stoat](https://github.com/stoatchat/for-desktop/releases/)
