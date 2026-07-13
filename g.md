@@ -74,7 +74,7 @@ These won't show up in the app launcher so I'd create a shortcut for them (see b
 Standalone apps can come in multiple formats:
 <br/><br/>
 
-### - AppImage -
+### - AppImages -
 These are single files that contain all of the app's data, rather than coming as a .zip file.<br>
 They end with a `.appimage` extension and can be double-clicked to run.
 
