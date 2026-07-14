@@ -64,6 +64,7 @@ I would recommend going to the Settings tab and clicking Make Default on the rig
 - Inkscape
 - OBS Studio
 - VLC
+- awesome calculator
 
 You can also install add-ons for apps such as Blender and VLC by finding their page on the store and clicking "Add-ons" at the top.
 <br/><br/>
