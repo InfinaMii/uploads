@@ -44,7 +44,8 @@ These are the apps that I would like you to install using this method:
 - Wine: `wine` and `winetricks`
   - Used for opening and configuring Windows applications respectively
  
-All of these programs will appear in the Discover store anyways, but I think it would be useful to use the terminal for these so that you know roughly how it works.
+All of these programs will appear in the Discover store anyways, but I think it would be useful to use the terminal for these so that you know roughly how it works.<br>
+The first time you run a command with `sudo`, it'll give you a brief warning - this is normal, and is there to make sure that you aren't entering anything dangerous by mistake.
 <br/><br/>
 
 
