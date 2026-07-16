@@ -126,7 +126,9 @@ These are some other things that you mentioned which I thought I would go over:
 The two main choices (to my knowledge) are LibreOffice and OnlyOffice:
 - LibreOffice comes with the most features, and has a customisable interface that is less familiar/modern
 - OnlyOffice has less features but aims to match Microsoft Office in its appearance and feature set<br>
-Both will be able to open any files you'd want to open, so it's mainly down to preference. (onlyoffice apparently added an optional ai tab but it seems like if you don't sign in with an api key it can't do anything)
+
+Both will be able to open any files you'd want to open, so it's mainly down to preference.<br>
+  (onlyoffice apparently added an optional ai tab but it seems like if you don't sign in with an api key it can't do anything)<br>
 They're also both on Flathub, so you'll be able to get them from the package manager.
 <br/><br/>
 
@@ -135,6 +137,10 @@ On Linux, typically you don't need a separate app to access FTP devices - this i
 On KDE Plasma, you can go to the Network tab and type `ftp://ip.address` into the file path bar (for example `ftp://192.168.7.29`), and it will open the FTP folder natively.<br>
 You can then right click in an empty spot and select "Add to Places" to pin this to the sidebar on the left.
 <br/><br/>
+
+### - DaVinci Resolve -
+Blackmagic Design, the developers of DaVinci Resolve, haven't created a seamless method of installing it on most Linux distros, as well as not supporting certain video formats unless you pay for the Studio version.<br>
+Fortunately, both of these problems are easily solved using the DaVinci Helper app. [There's a guide detailing how to use it here.](https://github.com/H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux)
 
 
 # --- App launcher shortcuts (desktop entries) ---
