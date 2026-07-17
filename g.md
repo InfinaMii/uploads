@@ -53,7 +53,9 @@ The first time you run a command with `sudo`, it'll give you a brief warning - t
 These will appear in the built-in app store, Discover.<br>
 Some websites will also have a Flathub button that will open the correct page in Discover for you.<br>
 
+By default, apps will install the DNF (Fedora 44) version rather than the universal Flatpak version, with a drop-down list in the top right of their page to select which one you would like to install.<br>
 I would recommend going to the Settings tab and clicking Make Default on the right so that Flatpak apps appear first in the list.<br>
+If you have any issues with the Flatpak apps, you can always uninstall the app and use the drop-down to switch to another version.<br>
 
 - Spotify
 - Discord (or Vesktop if you want themes/plugins)
@@ -175,6 +177,19 @@ Categories=Education;Games;Development;
 
 Note that if a folder contains spaces you need to put quotes around the entire path (e.g. "~/Documents/My Folder").<br>
 If you want to edit an existing app, you can either copy its file from `/usr/share/Applications/` to here, or simply right click it from the app launcher and select "edit".
+
+
+# --- App data directories ---
+On Linux, there are three main locations that apps will store their data/configuration files.<br>
+You can think of these sort of like the AppData folders on Windows:<br>
+
+- `/home/username/.var/app/` - this is where Flatpak apps (from the Discover store) usually store their data (e.g. .var/app/org.ryubing.Ryujinx)
+- `/home/username/.local/share/` - this is where most other apps will store data (e.g. .local/share/Steam)
+- `/home/username/.config/` - a secondary folder that some apps might use to store configuration files
+- Firefox stores its data in `/home/username/.mozilla` for some reason. No clue why.
+
+You'll need to turn on hidden files in order to see these folders (unless you want to type them into the path bar instead).<br>
+To do this, click on the hamburger menu in the top right of your file explorer, go down to More, View, and then "Show Hidden Files".
 
 
 
