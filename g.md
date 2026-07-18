@@ -43,8 +43,10 @@ After logging in, make sure to go through the little welcome guide it gives you,
 ## -- System Updates --
 You should probably download updates the first time you install Fedora, as with any operating system.<br>
 
-To do this, open up the "Discover" app (the app store), click on the "Updates" tab and select "Update All" in the top-right.<br>
-This will update all of your installed apps as well as your system itself.<br>
+To do this, first make sure you're connected to wifi (there should be an icon in the taskbar for this).<br>
+Next, open up the "Discover" app (the app store), click on the "Updates" tab and select "Update All" in the top-right.<br>
+
+This will update all of your installed apps as well as the system itself.<br>
 Once this is done, you can restart your computer to apply any updates to the system. App updates should apply instantly, without needing a restart.
 <br/><br/>
 
