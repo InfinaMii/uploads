@@ -1,7 +1,8 @@
 # --- Introduction ---
 This is a guide I've put together that goes over the process of setting up Fedora Linux, updating the computer, installing apps from various places, and a few other things (such as where data is stored and how to install themes).<br>
 
-To the top right of the page, there should be a hamburger button that opens up an "Outline" menu. I would recommend opening this to easily see what things are covered as well as being able to skip to different sections.
+To the top right of the page, there should be a hamburger button that opens up an "Outline" menu.<br>
+I would recommend opening this to easily see what things are in this document and to skip to different sections, as well as using Ctrl+F or "Find in Page" to search for specific words.
 <br/><br/><br/>
 
 
@@ -38,13 +39,15 @@ Once it is done, it should say "Successfully Installed" and ask you to reboot th
 After logging in, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "Discover" app store).
 <br/><br/>
 
+
 ## -- System Updates --
 You should probably download updates the first time you install Fedora, as with any operating system.<br>
 
 To do this, open up the "Discover" app (the app store), click on the "Updates" tab and select "Update All" in the top-right.<br>
 This will update all of your installed apps as well as your system itself.<br>
-Once this is done, you can restart your computer to apply any updates to the system. Any app updates should apply instantly, without needing a restart.
+Once this is done, you can restart your computer to apply any updates to the system. App updates should apply instantly, without needing a restart.
 <br/><br/>
+
 
 # --- Installing Apps ---
 Below I've listed the apps that you were interested in installing, as well as what different types of apps there are:
@@ -96,9 +99,10 @@ You can also install add-ons for apps such as OBS and VLC by finding their page 
 
 
 ## -- Apps from elsewhere (e.g. GitHub) --
-These won't show up in the app launcher, so I'd create a shortcut for them (see below)<br>
+These won't show up in the app launcher, so I'd create a shortcut for them (see the "App Launcher Shortcuts" section below)<br>
 Standalone apps can come in multiple formats:
 <br/><br/>
+
 
 ### - AppImages -
 These are single files that contain all of the app's data, rather than coming as a .zip file.<br>
@@ -107,12 +111,14 @@ They end with a `.appimage` extension and can be double-clicked to run.
 - [khinsiderdownloader](https://github.com/weespin/KhinsiderDownloader/releases)
 <br/><br/>
 
+
 ### - Other installable packages (rpm, deb, etc.) -
 Sometimes, you'll be given a list of other formats to select from (such as .deb, .rpm, or .nix).<br>
 The correct file for Fedora is the one ending in `.rpm`, and if there are multiple choices you'll want to select the "x86" or "x64" version (arm64 and aarch versions are for devices with mobile processors).<br>
 
 Once the download finishes, you can then double-click on this file and it will allow you to install it using Discover.
 <br/><br/>
+
 
 ### - Loose files (.zip, .tar.gz) -
 This is a .zip or .tar.gz file that contains the application and its data.<br>
@@ -123,6 +129,7 @@ The application within it doesn't have an icon or extension, for example Stoat's
 - [Stoat](https://github.com/stoatchat/for-desktop/releases/)
 <br/><br/>
 
+
 ### - Whatever is going on with Track Studio -
 Track Studio doesn't provide a Linux executable at all, but can be run by using the command `dotnet TrackStudio.dll` within the folder.<br>
 (right click -> Open Terminal Here)<br>
@@ -130,6 +137,7 @@ You should probably create a shortcut and set the `Exec=` property to `dotnet pa
 
 - [Track Studio](https://github.com/MapStudioProject/Track-Studio/releases)
 <br/><br/>
+
 
 ### - Windows apps -
 Windows apps can be opened similarly to Track Studio, running them with the command `wine path/to/program.exe`.<br>
@@ -149,6 +157,7 @@ I would recommend using an alternative for most things, but if there's a Windows
 These are some other things that you mentioned which I thought I would go over:
 <br/><br/>
 
+
 ### - Office apps (Word, PowerPoint etc.) -
 The two main choices (to my knowledge) are LibreOffice and OnlyOffice:
 - LibreOffice comes with the most features, and has a customisable interface that is less familiar/modern
@@ -159,6 +168,7 @@ Both will be able to open any files you'd want to open, so it's mainly down to p
 They're also both on Flathub, so you'll be able to get them from the package manager.
 <br/><br/>
 
+
 ### - FTP client -
 On Linux, typically you don't need a separate app to access FTP devices - this is something that your file manager can do already.<br>
 
@@ -166,10 +176,12 @@ On KDE Plasma, you can go to the Network tab and type `ftp://ip.address` into th
 You can also right click in an empty spot and select "Add to Places" to pin this to the sidebar on the left.
 <br/><br/>
 
+
 ### - DaVinci Resolve -
 Blackmagic Design, the developers of DaVinci Resolve, haven't created a seamless method of installing it on most Linux distros, as well as not supporting certain video formats unless you pay for the Studio version.<br>
 Fortunately, both of these problems are easily solved using the DaVinci Helper app. [There's a guide detailing how to use it here.](https://github.com/H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux)
 <br/><br/>
+
 
 ### - Firefox Extension -
 You didn't mention this one, but I think you would find it useful.<br>
@@ -179,6 +191,7 @@ If you go to the Firefox Add-On Browser, there is an extension called "Plasma In
 - Currently-playing music and videos will show up in the taskbar (this can be disabled)
 - Firefox tabs can be searched for through the app launcher / "start menu"
 <br/><br/>
+
 
 # --- App launcher shortcuts (desktop entries) ---
 
@@ -215,6 +228,7 @@ Note that if a folder's name contains spaces, you need to put quotes around the 
 If you want to edit an existing app, you can either copy its file from `/usr/share/Applications/` to here, or simply right click it from the app launcher and select "Edit Application".
 <br/><br/>
 
+
 # --- App data directories ---
 On Linux, there are three main locations that apps will store their data/configuration files.<br>
 You can think of these sort of like the AppData folders on Windows:<br>
@@ -228,6 +242,7 @@ You'll need to turn on hidden files in order to see these folders (unless you wa
 To do this, click on the hamburger menu in the top right of your file explorer, go down to More, View, and then "Show Hidden Files".
 <br/><br/>
 
+
 ## -- Windows app data paths + some Steam games --
 Windows apps, as well as any Steam games which use the Proton translation layer, will store their data in virtual Windows drives:<br>
 
@@ -235,4 +250,132 @@ Windows apps, as well as any Steam games which use the Proton translation layer,
 
 - For Steam games using Proton, their data will be within `/home/username/.local/share/Steam/steamapps/compatdata/[GAME_ID]/pfx/drive_c/`.<br>
 To find out what the game's ID is, you can either go to the game's Store page (it will be in the URL), or check the game's shortcut in the app launcher (right click -> Edit Application -> Command-line arguments)
+<br/><br/>
 
+
+# --- Customisation ---
+The desktop environment, KDE Plasma, is very customisable, with things such as icon packs, title bars, and even the taskbar layout being configurable.<br>
+Here is a brief overview of what options are available:<br>
+
+*I'm not including the Windows 7 conversion theme here, as it needs to install several components separately and I think that learning Linux is easier without changing the system this much.*
+*I would also recommend getting used to how the desktop works before customising it too heavily e.g. layout changes*
+<br/><br/>
+
+
+## -- Latest official themes --
+The latest version of KDE Plasma (Plasma 6.7) comes with new Frutiger Aero style themes, Oxygen and Air.<br>
+
+Fedora 44 comes with Plasma 6.6 (as 6.7 is pretty new), so it doesn't come with these by default.<br>
+If you have updated your system already (you can check the version in Settings > About), you can install them by entering the command `sudo dnf install plasma-oxygen` into Konsole.<br>
+These will then be available in the "Global Theme" page of the Settings app (see its section below for more details).
+<br/><br/>
+
+
+## -- Panel and Widgets Layout --
+KDE Plasma allows you to edit the layout of the Panel (taskbar) as well as put widgets on the Desktop.<br>
+
+To edit the Desktop, right click and select "Enter Edit Mode".<br>
+From here, you can select "Add or Manage Widgets" in the top left, and drag whichever widgets you like onto the Desktop.<br>
+These can be placed and resized similar to how you would expect on an Android phone.<br>
+
+To edit the Panel, right-click on it and select "Show Panel Configuration".<br>
+From here it acts similarly to the Desktop - you can drag around widgets, hover over things to change their settings, and change the properties of the Panel such as whether it is translucent or opaque, whether it floats, its position and size.<br>
+<br/><br/>
+
+
+## -- Colors and Themes menu --
+The following items can be found within the "Colors and Themes" menu of the Settings app:
+<br/><br/>
+
+
+### - Global Theme -
+Global Themes control multiple aspects of the system at the same time, including icons, cursors, window decorations and sounds.<br>
+
+Upon selecting a theme, you also get the option to copy the desktop layout from it. This will re-arrange the task bar and any widgets on the Desktop to match the theme, so don't tick this option unless you're sure you want it.<br>
+You can also save your current settings as a Global Theme by selecting the "Save Current Theme" option in the top right, or get new Global Themes using the "Get New" button.
+<br/><br/>
+
+
+### - Colors -
+These are the colors that applications will use for things such as the background, text and hyperlinks.<br>
+You can edit these by hovering them, pressing the edit icon, editing the desired colors and pressing Save As - though there are so many colors that I find it difficult to know which ones to modify.<br>
+You can also get new ones by pressing the "Get New" button in the top right.
+<br/><br/>
+
+
+### - Application Style -
+This determines what things such as check boxes, scroll bars and buttons look like within apps.<br>
+You can also press "Configure icons and toolbars" to set whether icons will be shown in menus.<br>
+
+This page is the least interesting of them all but can be important depending on the look you're going for.
+<br/><br/>
+
+
+### - Plasma Style -
+The Plasma style determines how elements of the Plasma desktop will look, such as the panel (or taskbar), the app launcher, and any desktop widgets.
+You can get new Plasma styles using the "Get New" button in the top right.
+<br/><br/>
+
+
+### - Window Decorations -
+Window decorations are the bar above the window that holds the minimize, maximize and close buttons.<br>
+
+Here you can select a visual style for these decorations, including new ones using the "Get New" button in the top right.<br>
+Additionally, you can rearrange or add buttons to the title bar using the "Configure Titlebar Buttons" option (for example, if you wanted them to be on the left like on macOS)<br>
+
+You can also add borders to your windows using the drop-down in the top-center of the window.
+<br/><br/>
+
+
+### - Icons -
+Pretty self explanatory, here you can select what icons apps will use, as well as getting more using "Get New" as usual.
+<br/><br/>
+
+
+### - Cursors -
+Here you can choose which mouse cursors to use, as well as setting their size.<br>
+The "Configure Launch Feedback" button allows you to set what animation plays when an app is launched (by default, its icon will bounce next to the mouse cursor for 5 seconds)<br>
+Also has a "Get New" button.
+<br/><br/>
+
+
+### - System Sounds -
+Here you can set what sounds will play with the system? I guess?<br>
+For example, the start-up sound, screenshot sound, sounds that play when a pop-up appears.
+<br/><br/>
+
+
+### - Splash Screen -
+This is not the screen that appears when the system boots, but rather the one that shows up after logging in (while the desktop is loading).<br>
+Personally I like to keep this set to "Breeze" or "None", as the desktop loads so fast nowadays that you barely see it anyways, and a colorful one popping up for just one second is a bit strange.
+<br/><br/>
+
+
+## -- Fonts --
+Fonts can be installed as you would expect, by downloading the desired .ttf or .otf file and double-clicking on it.<br>
+You can then change which fonts will be used for the window title, menus, and general apps (as well as their sizes) in the "Text & Fonts" page of the Settings app.
+<br/><br/>
+
+
+## -- Wallpaper --
+This is your Wallpaper. You know this. I don't know why I'm putting it here besides that it would feel odd to leave it out.<br>
+You can set this in the Wallpaper page in Settings, by right-clicking on the desktop, or by right-clicking on an image and selecting "Set as Wallpaper".<br>
+
+From the Settings page, you can also use the "Get New Plugins" button to install various different types of wallapers, such as shaders, videos, and effects like rain and snow.<br>
+<br/><br/>
+
+
+## -- Animations + Other Effects --
+Most animations can be set in the "Animations" page of the Settings app, such as maximize, minimize as well as their speed.<br>
+However, there's a second place that animations can be configured from:
+<br/><br/>
+
+
+### - Desktop Effects -
+Desktop Effects can be found within the Window Management page.<br>
+These contain default system settings such as making unresponsive windows turn grey, but also has various other fun options:
+
+- Wobbly Windows makes windows move like jelly when you drag them around the screen
+- Fall Apart makes windows break into pieces when you close them
+Various other effects can be downloaded from the "Get New" button. Note that if you install an Open/Close animation, it will be in the Animations page rather than the Desktop Effects one.
+<br/><br/>
