@@ -102,7 +102,7 @@ You can also install add-ons for apps such as OBS and VLC by finding their page 
 
 
 ## Apps from elsewhere (e.g. GitHub)
-These won't show up in the app launcher, so I'd create a shortcut for them (see the [App Launcher Shortcuts](#app-launcher-shortcut-desktop-entries) section below)<br>
+These won't show up in the app launcher, so I'd create a shortcut for them (see the [App Launcher Shortcuts](#app-launcher-shortcuts-desktop-entries) section below)<br>
 Standalone apps can come in multiple formats:
 <br/><br/>
 
