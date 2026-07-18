@@ -1,3 +1,10 @@
+# --- Introduction ---
+This is a guide I've put together that goes over the process of setting up Fedora Linux, updating the computer, installing apps from various places, and a few other things (such as where data is stored and how to install themes).<br>
+
+To the top right of the page, there should be a hamburger button that opens up an "Outline" menu. I would recommend opening this to easily see what things are covered as well as being able to skip to different sections.
+<br/><br/><br/>
+
+
 # --- Installing the operating system ---
 
 ## -- Creating a Live USB --
@@ -31,6 +38,13 @@ Once it is done, it should say "Successfully Installed" and ask you to reboot th
 After logging in, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "Discover" app store).
 <br/><br/>
 
+## -- System Updates --
+You should probably download updates the first time you install Fedora, as with any operating system.<br>
+
+To do this, open up the "Discover" app (the app store), click on the "Updates" tab and select "Update All" in the top-right.<br>
+This will update all of your installed apps as well as your system itself.<br>
+Once this is done, you can restart your computer to apply any updates to the system. Any app updates should apply instantly, without needing a restart.
+<br/><br/>
 
 # --- Installing Apps ---
 Below I've listed the apps that you were interested in installing, as well as what different types of apps there are:
@@ -157,6 +171,15 @@ Blackmagic Design, the developers of DaVinci Resolve, haven't created a seamless
 Fortunately, both of these problems are easily solved using the DaVinci Helper app. [There's a guide detailing how to use it here.](https://github.com/H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux)
 <br/><br/>
 
+### - Firefox Extension -
+You didn't mention this one, but I think you would find it useful.<br>
+
+If you go to the Firefox Add-On Browser, there is an extension called "Plasma Integration" that provides some extra utilities:
+- Downloads will show a desktop notification for their progress / when they are completed
+- Currently-playing music and videos will show up in the taskbar (this can be disabled)
+- Firefox tabs can be searched for through the app launcher / "start menu"
+<br/><br/>
+
 # --- App launcher shortcuts (desktop entries) ---
 
 For some apps, app launcher / "start menu" shortcuts won't be created automatically for you - this is where desktop entries come in.<br>
@@ -203,6 +226,7 @@ You can think of these sort of like the AppData folders on Windows:<br>
 
 You'll need to turn on hidden files in order to see these folders (unless you want to type them into the path bar instead).<br>
 To do this, click on the hamburger menu in the top right of your file explorer, go down to More, View, and then "Show Hidden Files".
+<br/><br/>
 
 ## -- Windows app data paths + some Steam games --
 Windows apps, as well as any Steam games which use the Proton translation layer, will store their data in virtual Windows drives:<br>
