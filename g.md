@@ -102,7 +102,7 @@ You can also install add-ons for apps such as OBS and VLC by finding their page 
 
 
 ## Apps from elsewhere (e.g. GitHub)
-These won't show up in the app launcher, so I'd create a shortcut for them (see the "App Launcher Shortcuts" section below)<br>
+These won't show up in the app launcher, so I'd create a shortcut for them (see the [App Launcher Shortcuts](#app-launcher-shortcut-desktop-entries) section below)<br>
 Standalone apps can come in multiple formats:
 <br/><br/>
 
@@ -270,7 +270,7 @@ The latest version of KDE Plasma (Plasma 6.7) comes with new Frutiger Aero style
 
 Fedora 44 comes with Plasma 6.6 (as 6.7 is pretty new), so it doesn't come with these by default.<br>
 If you have updated your system already (you can check the version in Settings > About), you can install them by entering the command `sudo dnf install plasma-oxygen` into Konsole.<br>
-These will then be available in the "Global Theme" page of the Settings app (see its section below for more details).
+These will then be available in the "Global Theme" page of the Settings app (see the [Global Theme section](#global-theme) below for more details).
 <br/><br/>
 
 
