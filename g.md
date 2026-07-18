@@ -204,5 +204,11 @@ You can think of these sort of like the AppData folders on Windows:<br>
 You'll need to turn on hidden files in order to see these folders (unless you want to type them into the path bar instead).<br>
 To do this, click on the hamburger menu in the top right of your file explorer, go down to More, View, and then "Show Hidden Files".
 
+## -- Windows app data paths + some Steam games --
+Windows apps, as well as any Steam games which use the Proton translation layer, will store their data in virtual Windows drives:<br>
 
+- For any .exe files opened using Wine, their data can be found by going to `/home/username/.wine/drive_c/` and then navigating to the place they usually store their data on Windows.<br>
+
+- For Steam games using Proton, their data will be within `/home/username/.local/share/Steam/steamapps/compatdata/[GAME_ID]/pfx/drive_c/`.<br>
+To find out what the game's ID is, you can either go to the game's Store page (it will be in the URL), or check the game's shortcut in the app launcher (right click -> Edit Application -> Command-line arguments)
 
