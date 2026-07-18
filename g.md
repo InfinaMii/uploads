@@ -2,25 +2,33 @@
 
 ## -- Creating a Live USB --
 The process for creating a live Fedora USB is pretty simple compared to some other distros.<br>
-Fedora Media Writer can be downloaded from (the Fedora GitHub page)[https://github.com/FedoraQt/MediaWriter/releases/latest]. This is a GUI tool that lets you pick a version of Fedora to download, and will write it to an **empty** USB drive.<br>
+
+Fedora Media Writer can be downloaded from [the Fedora GitHub page](https://github.com/FedoraQt/MediaWriter/releases/latest). This is a program that lets you pick a version of Fedora to download, and will write it to an **empty** USB drive.<br>
 Make sure to select **Fedora KDE Plasma Desktop** instead of **Fedora Workstation** in the drop-down if you want a Windows-like experience (rather than the default macOS-like one).<br>
-Once it is done, your USB drive can be used to reboot into Fedora.
+
+Once it is done, your USB drive can be used to install Fedora on the computer.
 <br/><br/>
 
 
 ## -- Booting from the USB drive --
-If you don't already have an operating system installed (e.g. Windows on the SSD), I believe the computer should automatically boot into the live USB if its inserted due to this being the only available volume?<br>
-If it doesn't, you can select it from the BIOS menu. The BIOS menu can be opened by holding the `Esc` key whilst the computer boots, and once it opens there should be a menu on the bottom right that allows you to select which device to boot into (in this instance the Fedora/USB device).<br>
-This will enter you into a menu that says something similar to "Start Fedora 44" and "Test this media and start Fedora 44". These both do essentially the same thing, with one doing extra checks to make sure the USB is set up properly. I usually just pick "Start Fedora 44".
+If the computer's SSD is empty, I believe it should automatically boot into the USB due to it being the only available device?<br>
+If it doesn't, you can select it from the BIOS menu.<br>
+
+The BIOS menu can be opened by holding the `Esc` key whilst the computer boots, and once it opens there should be a menu on the bottom right to select which device to boot into (in this instance the Fedora/USB device).<br>
+
+This will open a menu that says something similar to "Start Fedora 44" and "Test this media and start Fedora 44".<br>
+These both do essentially the same thing, with one doing extra checks to make sure the USB is set up properly. I usually just pick "Start Fedora 44".
 <br/><br/>
 
 
 ## -- Installing Fedora --
-Once you're in the desktop environment, it should bring up a prompt to install Fedora to the computer.<br>
-This is pretty simple so I'm sure you can figure this part out, you basically select your language, date/time, and then pick which drive to install to.<br>
-Since you're building a new computer (with no files already on it) you can just tell it to erase the entire drive, and it should ask you to reboot once it is done.<br>
+Once you're in the desktop environment, it should bring up a window to install Fedora to the computer.<br>
 
-When it reboots, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "discover" app store).
+This is pretty simple so I'm sure you can figure this part out, you basically select your language, date + time, and then pick which drive to install to.<br>
+Since you're building a new computer (with no files already on it) you can just tell it to erase the entire drive.<br>
+
+Once it is done, it should say "Successfully Installed" and ask you to reboot the computer.<br>
+After logging in, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "Discover" app store).
 <br/><br/>
 
 
@@ -29,12 +37,13 @@ Below I've listed the apps that you were interested in installing, as well as wh
 <br/><br/>
 
 ## -- System commands --
-These are commands that can be entered into the system terminal (on KDE Plasma this is Konsole) to install apps:
-`sudo dnf install firefox gnome-disks`
+These are commands that can be entered into the system terminal (on KDE Plasma this is Konsole) to install programs, for example:
+`sudo dnf install app-one app-two`
 
 `sudo` = admin (will ask for password)<br>
 `dnf install` = package manager, install<br>
-`firefox gnome-disks` = example of apps to install
+`app-one app-two` = example of apps to install
+<br><br>
 
 These are the apps that I would like you to install using this method:
 - Dotnet Runtime 8.0: `dotnet-runtime-8.0`
@@ -51,11 +60,10 @@ The first time you run a command with `sudo`, it'll give you a brief warning - t
 
 ## -- Apps from Flathub Store --
 These will appear in the built-in app store, Discover.<br>
-Some websites will also have a Flathub button that will open the correct page in Discover for you.<br>
+Some websites also have a Flathub button that will open the correct page in Discover for you.<br>
 
-By default, apps will install the DNF (Fedora 44) version rather than the universal Flatpak version, with a drop-down list in the top right of their page to select which one you would like to install.<br>
-I would recommend going to the Settings tab and clicking Make Default on the right so that Flatpak apps appear first in the list.<br>
-If you have any issues with the Flatpak apps, you can always uninstall the app and use the drop-down to switch to another version.<br>
+I would recommend going to the Settings tab and clicking Make Default on the right so that Flatpak apps will be suggested first (rather than fedora ones).<br>
+If you are having issues with the Flatpak version or would like to install the Fedora-specific version instead, you can always uninstall it and use the drop-down in the top right of the app's page to switch to another version.
 
 - Spotify
 - Discord (or Vesktop if you want themes/plugins)
@@ -69,12 +77,12 @@ If you have any issues with the Flatpak apps, you can always uninstall the app a
 - VLC
 - awesome calculator
 
-You can also install add-ons for apps such as Blender and VLC by finding their page on the store and clicking "Add-ons" at the top.
+You can also install add-ons for apps such as OBS and VLC by finding their page on the store and clicking "Add-ons" at the top.
 <br/><br/>
 
 
 ## -- Apps from elsewhere (e.g. GitHub) --
-These won't show up in the app launcher so I'd create a shortcut for them (see below)<br>
+These won't show up in the app launcher, so I'd create a shortcut for them (see below)<br>
 Standalone apps can come in multiple formats:
 <br/><br/>
 
@@ -87,14 +95,15 @@ They end with a `.appimage` extension and can be double-clicked to run.
 
 ### - Other installable packages (rpm, deb, etc.) -
 Sometimes, you'll be given a list of other formats to select from (such as .deb, .rpm, or .nix).<br>
-The correct file for Fedora is the one ending in `.rpm`, and if given an option you'll want to select the "x86" or "x64" version (arm64 and aarch versions are for devices with mobile processors).<br>
-Once the download finishes, you can then double-click on this file and it will allow you to install it using the Discover store app.
+The correct file for Fedora is the one ending in `.rpm`, and if there are multiple choices you'll want to select the "x86" or "x64" version (arm64 and aarch versions are for devices with mobile processors).<br>
+
+Once the download finishes, you can then double-click on this file and it will allow you to install it using Discover.
 <br/><br/>
 
 ### - Loose files (.zip, .tar.gz) -
-This is a .zip or .tar.gz file that containing the application and its data.<br>
-Both .tar.gz and .zip files can be extracted by dragging them towards empty space in the file manager, or right clicking and selecting "Extract To..."<br>
-The executable within it doesn't usually have an icon or extension, for example Stoat's file is just called "stoat-desktop".
+This is a .zip or .tar.gz file that contains the application and its data.<br>
+Both .tar.gz and .zip files can be extracted by dragging them towards empty space in the file manager, or right clicking them and selecting "Extract To..."<br>
+The application within it doesn't have an icon or extension, for example Stoat's file is just called "stoat-desktop".
 
 - [CTDM](https://github.com/MatteoPrampolini/CTDM/releases)
 - [Stoat](https://github.com/stoatchat/for-desktop/releases/)
@@ -102,6 +111,7 @@ The executable within it doesn't usually have an icon or extension, for example 
 
 ### - Whatever is going on with Track Studio -
 Track Studio doesn't provide a Linux executable at all, but can be run by using the command `dotnet TrackStudio.dll` within the folder.<br>
+(right click -> Open Terminal Here)<br>
 You should probably create a shortcut and set the `Exec=` property to `dotnet path/to/TrackStudio.dll` to make it easier to launch.
 
 - [Track Studio](https://github.com/MapStudioProject/Track-Studio/releases)
@@ -111,9 +121,10 @@ You should probably create a shortcut and set the `Exec=` property to `dotnet pa
 Windows apps can be opened similarly to Track Studio, running them with the command `wine path/to/program.exe`.<br>
 You should also be able to open them by double-clicking the .exe file.
 
-For some apps, you'll need to configure setting or install extra dependencies (such as directx runtime) in order for them to run properly.<br>
-This can be done either by downloading the Windows versions of these dependencies separately and running them the same way you would on Windows, or if you need to change something more specifically, using `winetricks` from the terminal.<br>
-I would typically recommend using an alternative for most things, but if there's a Windows app that can't be replaced it might work through Wine.
+For some apps, you'll need to install extra dependencies (such as DirectX Runtime) in order for them to run properly.<br>
+This can be done by downloading the Windows versions of these dependencies separately and running them the same way you would on Windows.<br>
+
+I would recommend using an alternative for most things, but if there's a Windows app that can't be replaced it might work through Wine.
 
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/releases/tag/Final)
 - [BrawlBuilder](https://github.com/mogzol/BrawlBuilder/releases/latest)
@@ -127,23 +138,24 @@ These are some other things that you mentioned which I thought I would go over:
 ### - Office apps (Word, PowerPoint etc.) -
 The two main choices (to my knowledge) are LibreOffice and OnlyOffice:
 - LibreOffice comes with the most features, and has a customisable interface that is less familiar/modern
-- OnlyOffice has less features but aims to match Microsoft Office in its appearance and feature set<br>
+- OnlyOffice has less features overall but aims to match Microsoft Office in its appearance and feature set<br>
 
 Both will be able to open any files you'd want to open, so it's mainly down to preference.<br>
-  (onlyoffice apparently added an optional ai tab but it seems like if you don't sign in with an api key it can't do anything)<br>
+&emsp;(onlyoffice apparently added an optional ai tab but it seems like if you don't sign in with an api key it can't do anything)<br>
 They're also both on Flathub, so you'll be able to get them from the package manager.
 <br/><br/>
 
 ### - FTP client -
 On Linux, typically you don't need a separate app to access FTP devices - this is something that your file manager can do already.<br>
+
 On KDE Plasma, you can go to the Network tab and type `ftp://ip.address` into the file path bar (for example `ftp://192.168.7.29`), and it will open the FTP folder natively.<br>
-You can then right click in an empty spot and select "Add to Places" to pin this to the sidebar on the left.
+You can also right click in an empty spot and select "Add to Places" to pin this to the sidebar on the left.
 <br/><br/>
 
 ### - DaVinci Resolve -
 Blackmagic Design, the developers of DaVinci Resolve, haven't created a seamless method of installing it on most Linux distros, as well as not supporting certain video formats unless you pay for the Studio version.<br>
 Fortunately, both of these problems are easily solved using the DaVinci Helper app. [There's a guide detailing how to use it here.](https://github.com/H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux)
-
+<br/><br/>
 
 # --- App launcher shortcuts (desktop entries) ---
 
@@ -175,9 +187,10 @@ Categories=Education;Games;Development;
 
 ```
 
-Note that if a folder contains spaces you need to put quotes around the entire path (e.g. "~/Documents/My Folder").<br>
-If you want to edit an existing app, you can either copy its file from `/usr/share/Applications/` to here, or simply right click it from the app launcher and select "edit".
+Note that if a folder's name contains spaces, you need to put quotes around the entire path (e.g. "~/Documents/My Folder").<br>
 
+If you want to edit an existing app, you can either copy its file from `/usr/share/Applications/` to here, or simply right click it from the app launcher and select "Edit Application".
+<br/><br/>
 
 # --- App data directories ---
 On Linux, there are three main locations that apps will store their data/configuration files.<br>
