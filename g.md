@@ -33,7 +33,8 @@ These both do essentially the same thing, with one doing extra checks to make su
 Once you're in the desktop environment, it should bring up a window to install Fedora to the computer.<br>
 
 This is pretty simple so I'm sure you can figure this part out, you basically select your language, date + time, and then pick which drive to install to.<br>
-Since you're building a new computer (with no files already on it) you can just tell it to erase the entire drive.<br>
+Since you're building a new computer (with no files already on it) you can just tell it to erase the entire disk.<br>
+If it asks, don't bother setting up a root account, as this isn't necessary for a personal computer.<br>
 
 Once it is done, it should say "Successfully Installed" and ask you to reboot the computer.<br>
 After logging in, make sure to go through the little welcome guide it gives you, since one of the pages asks you if you would like enable third party repositories (which will make many more apps available from the built-in "Discover" app store).
