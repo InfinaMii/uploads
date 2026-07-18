@@ -300,7 +300,11 @@ You can also save your current settings as a Global Theme by selecting the "Save
 
 
 ### - Colors -
-These are the colors that applications will use for things such as the background, text and hyperlinks.<br>
+Here you can set the system accent colors, as well as the color scheme for apps.
+
+You can set the accent color using the buttons at the top, as well as deciding whether this color should be automatically selected from the wallpaper.<br>
+
+Color schemesthe colors that applications will use for things such as the background, text and hyperlinks.<br>
 You can edit these by hovering them, pressing the edit icon, editing the desired colors and pressing Save As - though there are so many colors that I find it difficult to know which ones to modify.<br>
 You can also get new ones by pressing the "Get New" button in the top right.
 <br/><br/>
