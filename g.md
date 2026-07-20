@@ -266,7 +266,7 @@ Here is a brief overview of what options are available:<br>
 
 
 ## Latest official themes
-The latest version of KDE Plasma (Plasma 6.7) comes with new Frutiger Aero style themes, Oxygen and Air.<br>
+The latest version of KDE Plasma (Plasma 6.7) comes with new skeumorphic themes, Oxygen and Air.<br>
 
 Fedora 44 comes with Plasma 6.6 (as 6.7 is pretty new), so it doesn't come with these by default.<br>
 If you have updated your system already (you can check the version in Settings > About), you can install them by entering the command `sudo dnf install plasma-oxygen` into Konsole.<br>
